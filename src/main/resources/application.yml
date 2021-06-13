@@ -1,5 +1,5 @@
 display:
-  mach: 2
+  mach: 3
   unit:
-    name: "mpx"
-    factor: 5.24594
+    name: "mph"
+    factor: 2.23694
