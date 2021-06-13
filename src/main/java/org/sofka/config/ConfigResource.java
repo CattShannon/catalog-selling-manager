@@ -32,10 +32,11 @@ public class ConfigResource {
         final BigDecimal speed = BigDecimal.valueOf(speedOfSound)
             .multiply(displayUnitFactor)
             .multiply(BigDecimal.valueOf(mach));
-        return String.format("Mach %d is %.3f %s",
-            mach,
-            speed,
-            displayUnitName
-        );
+        //return String.format("Mach %d is %.3f %s",
+        //    mach,
+        //    speed,
+        //    displayUnitName
+        //);
+        return "Mach " + mach + " is " + speed + " " + displayUnitName;
     }
 }

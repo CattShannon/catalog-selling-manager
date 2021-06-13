@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.CoreMatchers.is;
 
 @QuarkusTest
 public class ConfigResourceTest {
@@ -18,8 +17,7 @@ public class ConfigResourceTest {
 
          response.then().statusCode(200);
 
-         Assertions.assertEquals("Mach 3 is 2301,811 mph", response.asString());
-
+         Assertions.assertEquals("Mach 3 is 2301.81126 mph", response.asString());
     }
 
 }
